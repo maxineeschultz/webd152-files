@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Picture Element</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Picture Element</h1>
+
+<picture>
+    <source type="image/webp" media="(max-width: 480px)" srcset="small.webp">       
+	<source type="image/webp" media="(max-width: 800px)" srcset="medium.webp">
+	<source type="image/webp"  srcset="large.webp"> 
+    <source media="(max-width: 480px)" srcset="small.jpg">
+    <source media="(max-width: 800px)" srcset="medium.jpg">
+    <source srcset="large.jpg">
+    <img src="fallback.jpg" alt="water wheel"> 
+</picture>
+
+</body>
+</html>

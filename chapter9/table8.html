@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Complex and Simple Table Examples</title>
+ <meta charset="utf-8">
+ <style>
+   table, td, th { border: 1px solid #000; }
+ </style>
+</head>
+<body>
+<h2>Complex Table Using the scope Attribute</h2>
+  <table>
+    <caption>Lighthouse Island Bistro Sales</caption>
+       <tr>
+        <th colspan="2" rowspan="2">Locations</th>
+        <th colspan="3" scope="colgroup">Coffee</th>
+      </tr>
+      <tr>
+        <th scope="col">Lite Latte</th>
+        <th scope="col">Mocha Latte</th>
+        <th scope="col">MCP Latte</th>
+      </tr>
+      <tr>
+        <th rowspan="3" scope="rowgroup">Wisconsin</th>
+        <th scope="row">Fishcreek</th>
+        <td>304</td>
+        <td>225</td>
+        <td>234</td>
+      </tr>
+      <tr>
+        <th scope="row">Ellison Bay</th>
+        <td>60</td>
+        <td>22</td>
+        <td>43</td>
+     </tr>
+     <tr>
+       <th scope="row">Egg Harbor</th>
+       <td>141</td>
+       <td>235</td>
+       <td>332</td>
+     </tr>
+     <tr>
+       <th rowspan="2" scope="rowgroup">California</th>
+       <th scope="row">Lake Tahoe</th>
+       <td>854</td>
+       <td>345</td>
+       <td>294</td>
+     </tr>
+     <tr>
+       <th scope="row" >Havasu Lake</th>
+       <td>180</td>
+       <td>132</td>
+       <td>143</td>
+     </tr>
+    </table>
+	
+	<h2>One Complex Table Replaced by Two Simple Tables </h2>
+  <table>
+    <caption>Lighthouse Island Bistro Wisconsin Coffee Sales</caption>
+      <tr>
+	    <th>Locations</th>
+        <th>Lite Latte</th>
+        <th>Mocha Latte</th>
+        <th>MCP Latte</th>
+      </tr>
+      <tr>
+        <th >Fishcreek</th>
+        <td>304</td>
+        <td>225</td>
+        <td>234</td>
+      </tr>
+      <tr>
+        <th>Ellison Bay</th>
+        <td>60</td>
+        <td>22</td>
+        <td>43</td>
+     </tr>
+     <tr>
+       <th>Egg Harbor</th>
+       <td>141</td>
+       <td>235</td>
+       <td>332</td>
+     </tr>
+</table>
+<br>
+   <table>
+    <caption>Lighthouse Island Bistro California Coffee Sales</caption>
+      <tr>
+	    <th>Locations</th>
+        <th>Lite Latte</th>
+        <th>Mocha Latte</th>
+        <th>MCP Latte</th>
+      </tr>
+     <tr>
+       <th>Lake Tahoe</th>
+       <td>854</td>
+       <td>345</td>
+       <td>294</td>
+     </tr>
+     <tr>
+       <th>Havasu Lake</th>
+       <td>180</td>
+       <td>132</td>
+       <td>143</td>
+     </tr>
+    </table>
+</body>
+</html>

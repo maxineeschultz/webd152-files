@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kayak Adventure</title>
+<style>
+body { font-family: Tahoma, Verdana, Arial, sans-serif; 
+       margin: 0; padding: 0;
+}
+nav { z-index:9999;
+      position: fixed;
+	  top: 0;
+	  left: 0;
+	  padding: .5em;
+	  height: 40px;
+	  background:rgba(25,25, 25, 0.70);
+	  width: 100%;
+	  font-size: 120%;
+	  font-weight: bold;
+	  min-width: 900px;
+ }
+nav ul { list-style-type: none; 
+         margin: 5px; }
+nav ul li { display: inline; padding-left: 2em; padding-right: 2em; }
+nav a { text-decoration:none; }
+nav a:link { color: #EAEAEA; }
+nav a:visited { color: #FFF; }
+nav a:hover { color: #FDA27F; }
+.hero { position: relative; }
+.hero h1 { position: absolute; 
+     z-index: 999;   
+     top: 40%;
+     left: 10%; 
+     color: rgba(255, 255, 255, 0.6); 
+     font-family: Georgia, serif;
+	 font-size: 3em;
+	 width: 40%;
+}
+img {  height: 100vh; width: 100%; }
+#tours, #rentals, #contact {  width: 60%;
+						      padding-left: 6em;
+						      padding-top: 70px;
+						       padding-bottom: 2em; 
+}
+						  
+footer { background:rgba(25,25, 25, 0.90);
+         width: 100%;
+         font-size: 90%;
+         text-align: center;	
+         color: #EAEAEA; 
+		 position: fixed;
+         bottom: 0;}	
+footer a { text-decoration: none;  
+           color: #EAEAEA; }	
+</style>
+</head> 
+<body>
+<nav>
+  <ul>
+    <li><a href="#home">KayakDoorCounty.net</a></li>
+    <li><a href="#tours">Tours</a></li>
+    <li><a href="#rentals">Rentals</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="hero"  id="home">
+  <h1>KayakDoorCounty.net</h1>
+  <img  src="beached.jpg" loading="eager" alt="kayaks on the beach" width="900" height="600">
+</div>
+
+<div>
+<section id="tours" >
+<h2>Tours by KayakDoorCounty.net</h2>
+<h2>Your next adventure is only a paddle away....</h2> 
+<p>Take a guided kayak tour while you explore the scenic shoreline of Door County<p>
+<h3>Featured tours this week:</h3>
+<ul>
+  <li>Cana Island</li>
+  <li>Mink River</li>
+  <li>Europe Lake</li>
+</ul>
+</section> 
+ <img src="kayaks.jpg" loading="lazy" alt="kayaks" width="900" height="600">
+</div>
+<div>
+ <section id="rentals"> 
+<h2>Rent Kayaks from KayakDoorCounty.net</h2>
+<h3>Be Your Own Guide.....</h3> 
+<p>Half day, full day, and week-long rentals available.<br><br>
+Rent a kayak at one of these three scenic locations:</p>
+<ul>
+<li>Eagle Harbor</li>
+<li>Sister Bay</li>
+<li>Garrett Bay</li>
+</ul>
+</section>
+ <img loading="lazy" src="rentals.jpg" alt="kayaks" width="900" height="600">
+</div>
+<div>
+<section id="contact"> 
+<h2>Contact KayakDoorCounty.net</h2>
+<h3>Call, Text, or Email</h3>
+<p>A trained kayak guide will answer all your questions and get you out on the water!<br>
+Call to reserve your kayak today!</p>
+555-555-5555<br>
+<a href="mailto:info@kayakdoorcounty.net">info@kayakdoorcounty.net</a>
+</section>
+ <img loading="lazy" src="lonekayak.jpg" alt="kayak on the water" width="900" height="600">
+ </div>
+ <footer>
+KayakDoorCounty.net<br>
+<a href="mailto:info@kayakdoorcounty.net">info@kayakdoorcounty.net</a>
+</footer>
+</body>
+</html>                            
